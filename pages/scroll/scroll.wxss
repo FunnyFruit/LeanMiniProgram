@@ -1,0 +1,33 @@
+/* pages/scroll/scroll.wxss */
+.container1{
+  background: purple;
+  height:120px;
+  /* 不换行 */
+  white-space: nowrap;
+}
+
+.item1{
+  width:100px;
+  height:100px;
+  background:red;
+  margin: 10px;
+  display: inline-block;
+}
+
+.container2{
+  margin-top:10px; 
+  height:300px;
+  background: blue;
+  /* 不换行 */
+}
+
+.item2{
+  width:95%;
+  height:100px;
+  background:red;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+
