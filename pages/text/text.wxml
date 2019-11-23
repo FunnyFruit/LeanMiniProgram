@@ -1,0 +1,21 @@
+<!--pages/text/text.wxml-->
+<!-- 基本使用 -->
+<text>Hello World\n</text>
+<text>你好小程序 \n</text>
+
+<!-- 2、是否可以选中 selectable，默认情况下是不能选中 -->
+<!-- 如果是赋值，使用{{}}语法，而不使用{{}}是赋值字符串 -->
+<!-- 小程序中，默认属性为false，只要写入属性名称即可位true -->
+<text selectable="{{true}}">hello mikelong\n</text>
+<text selectable>hello 111 \n</text>
+
+<!-- 3 space ：决定文本空格的大小 -->
+<text >Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+
+<!-- 4 decode 属性：是否解码文本 -->
+<text>5 &gt;3 \n</text>
+<text decode>5 &gt;3</text>
+

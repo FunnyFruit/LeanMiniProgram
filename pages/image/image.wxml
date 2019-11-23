@@ -1,0 +1,38 @@
+<!-- image 
+      可以写成双标签，也可以写成单标签
+      image组件默认有自己的大小 320*240
+      image 组件时一个行内块级元素 inline-block
+ -->
+
+ <image/>
+
+<!-- src 远程地址或者本地地址 -->
+<image src="../../assets/image/hj1.gif" />
+<image src="http://pic.uzzf.com/up/2016-12/14820513433035047.gif" />
+
+<!-- 显示相册中的图片 让用户先选中相册中的某张图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}" />
+
+<!-- 监听图片加载 -->
+
+
+<!--3.lazy load 图片的懒加载，图片即将加载时去服务器请求数据 -->
+<view>=====================================</view>
+<!-- bindload 监听图片加载完成时 触发事件-->
+<image wx:for="{{1}}" src="http://pic.uzzf.com/up/2016-12/14820513433035047.gif" 
+            bindload="handleImageLoad" 
+            lazy-load="{{true}}"   />
+
+<!-- 4.识别图片中的小程序码 长按图片识别小程序码 -->
+<view>=====================================</view>
+<image show-menu-by-longpress
+        src="http://e.hiphotos.baidu.com/zhidao/pic/item/4e4a20a4462309f79447a96d750e0cf3d7cad6a0.jpg"
+          />
+
+
+<image src="http://e.hiphotos.baidu.com/zhidao/pic/item/4e4a20a4462309f79447a96d750e0cf3d7cad6a0.jpg1"
+        binderror="handleImageError" />
+
+
+

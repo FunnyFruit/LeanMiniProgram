@@ -1,0 +1,16 @@
+<!-- input 组件 -->
+文本输入
+<input  type="text" />
+数字输入
+<input  type="number" />
+身份证输入
+<input  type="idcard" />
+带小数点的数字键盘
+<input  type="digit" />
+密码输入
+<input password />
+站位文字
+<input placeholder="滑稽哟" />
+
+<!-- input绑定事件 -->
+<input  />

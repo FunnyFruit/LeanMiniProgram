@@ -1,0 +1,24 @@
+<!--pages/view/view.wxml-->
+<!-- view 的基本使用  -->
+<!-- view像div，块级元素，独占一行 -->
+<view class="box">卧槽</view>
+<!-- 当用户按下组件时显示的状态 -->
+<view class="box1" 
+      hover-class="hover-view"
+      hover-stay-time="{{10}}"
+      hover-start-time="{{1200}}"
+      >我艹</view>
+
+      <!-- hover-stop-propagation 指定是否阻止本节点的祖先节点出现点击态 -->
+
+      <view class="box2" hover-class="box2-hover">
+      
+      <view class="box1" 
+      hover-class="hover-view"
+      hover-stay-time="{{10}}"
+      hover-start-time="{{100}}"
+      hover-stop-propagation="{{false}}"
+      >我艹</view>
+
+      
+      </view>

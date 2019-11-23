@@ -1,0 +1,16 @@
+<!--pages/button/button.wxml-->
+<!-- button 的基本使用 -->
+<button>按钮</button>
+
+<!-- 1、size属性 ：mini，默认display:inline-block -->
+<button size="mini">小按钮</button>
+<button size="mini">小按钮</button>
+
+<!-- type属性： -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- plain 镂空效果 -->
+<button size="mini" plain>按钮</button>
+<button size="mini" loading="{{isLoading}}">按钮</button>
