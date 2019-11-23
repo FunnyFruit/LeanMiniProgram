@@ -1,0 +1,31 @@
+<!-- input 的基本使用 -->
+
+<input />
+
+<!-- 1.value input中的默认值 -->
+默认值：
+<input value="卧槽无情" />
+
+<!-- 2.type 决定键盘类型 文本输入，数字，省份证  弹出对应键盘
+text	文本输入键盘	
+number	数字输入键盘	
+idcard	身份证输入键盘	
+digit	带小数点的数字键盘
+-->
+数字键盘：
+<input type="number"  />
+<!-- 3.暗文，password属性 -->
+密码：
+<input password />
+<!-- 4.占位文字 placeholder -->
+占位提示：
+<input placeholder="输入文字哟" />
+
+
+<!-- 6.input绑定事件 -->
+绑定事件：
+<input bindinput="handleInput"
+        bindfocus="handleFocus"
+        bindblur="handleBlur" />
+
+
