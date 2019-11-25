@@ -1,0 +1,12 @@
+function priceFormat(price,number){
+  //价格 保存的的小数点位数
+  //判断是否传入小数点
+  var number = number || 2 ;
+
+  return price.toFixed(number)
+}
+
+//导出  否则是私有的 外面无法访问
+module.exports = {
+  priceFormat: priceFormat
+}

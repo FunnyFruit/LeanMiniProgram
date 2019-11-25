@@ -1,0 +1,31 @@
+
+<!-- wxs ：WeiXin script 微信的脚本语言 -->
+
+<!-- 在mustache语法中，调用script定义的函数（tp5的过滤器  ） -->
+<!-- 小程序中没有过滤器，所以要一个办法来搞这件事，所以使用wxs -->
+
+
+<!-- wxs的定义方式 -->
+
+<wxs src="../../wxs/info.wxs" module="info" />
+
+
+<view>{{info.foo}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(1,2)}}</view>
+
+
+<!-- 2 wxs的应用！ -->
+<wxs src="../../wxs/format.wxs" module="format"  />
+
+<view>{{format.priceFormat(price,3)}}</view>
+
+
+
+
+
+
+
+
+
+
