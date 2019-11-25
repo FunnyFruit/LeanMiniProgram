@@ -1,0 +1,23 @@
+<!-- 模板的使用
+  代码的复用
+
+ -->
+
+
+<!-- 模板：：：必须有名字，通过名字找到模板
+      模板包裹的东西，在没有使用时 ，是不会被显示的
+
+ -->
+<!-- <template name="contentItem">
+  <button  size="mini">{{buttonText}}</button>
+  <view>{{content}}</view>
+</template> -->
+
+<!-- 模板使用：is=“模板名字”  传入数据 data="{{key1:value,key2:value2}}"-->
+
+<!-- 导入模板 -->
+
+<import src="../../wxml/template.wxml" />
+
+<template is="contentItem"  data="{{buttonText:'自毁按钮',content:'mikelong'}}"/>
+

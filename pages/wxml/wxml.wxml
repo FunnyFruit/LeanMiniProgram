@@ -1,0 +1,95 @@
+
+<!-- mustache语法 -->
+
+<view>{{message}}</view>
+<view>{{fastname}} {{lastname}}</view>
+<view>{{age}}</view>
+
+<view>{{ age >= 18 ?"成年人":"未成年人"}}</view>
+<view>{{time}}</view>
+
+<button size="mini" bindtap="handleSwitchColor">改变颜色</button>
+<view class="box {{ isActive ? 'active':'' }}">what is color?</view>
+
+<view>--------条件判断----wx:if-------</view>
+<view wx:if="{{isShow}}">卧槽</view>
+<button bindtap="handleChangeShow">切换显示</button>
+
+
+<view>--------条件判断----wx:else-if-------</view>
+<view>当前分数：{{score}}</view>
+<view wx:if="{{score >= 90 }}">优秀</view>
+<view wx:elif="{{score >= 80 }}">良好</view>
+<view wx:elif="{{score >= 60 }}">及格</view>
+<view wx:if="{{score < 60 }}">不及格</view>
+<button bindtap="handleAddScore">增加分数</button>
+
+
+<view>--------hidden属性-------</view>
+<view hidden="{{true}}">我是hidden属性哟</view>
+<view hidden="{{false}}">我是hidden属性哟</view>
+
+<!-- wx:if ;hidden隐藏组件有何不同 -->
+
+<!-- hidden :将东西隐藏，不删除节点，显示隐藏频率极高时
+    wx:if  将节点删除，或者添加。显示隐藏频率低时
+
+ -->
+<view>++++hidden属性++++++</view>
+
+<view hidden="{{true}}">我是hidden属性哟</view>
+<view wx:if="{{false}}">我是wx:if属性哟</view>
+
+<!-- 列表渲染 wx:for key的作用 -->
+<view>----------列表渲染---------</view>
+<!-- 1.wx:for的基础 ：
+    可以遍历数组，字符串，数字
+ -->
+<view class="wxfor" wx:for="{{[1,'a',3,'b',5,'c',7]}}">{{item}} | {{index}}</view>
+
+<!--  <view wx:for="coderwhy">{{item}} | {{index}}</view>
+<view wx:for="{{9}}">{{item}} | {{index}}</view> -->
+
+<!-- block标签 -->
+<!-- <view>--------block标签----------</view>
+<block wx:if="{{isShow}}">
+  <button>anniu</button>
+  <view>hehehe</view>
+  <text>content</text>
+</block>
+
+<view>-------------------------</view>
+
+<block wx:for="{{3}}">
+  <button>anniu</button>
+  <view>hehehe</view>
+  <text>content</text>
+</block> -->
+
+<!-- 3.item index起别名 -->
+
+<view wx:for="{{movies}}" wx:for-item="movies" wx:for-index="i">{{movies}} | {{i}}</view>
+
+<block wx:for="{{nums}}" wx:for-item="innernums">
+    <block wx:for="{{innernums}}">^ {{item}} </block>
+</block>
+
+
+<!-- key的作用：提高效率 -->
+<!-- key的作用,绑定一个id -->
+
+<view wx:for="{{letters}}">
+    <view>{{item}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+

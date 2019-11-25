@@ -1,0 +1,20 @@
+/* pages/wxml/wxml.wxss */
+
+.box{
+  font-size:30rpx;
+
+}
+
+.active{
+  color:red;
+}
+
+.wxfor{
+  float: left;
+  width:40px;
+  line-height:40px;
+  border:1px solid #ccc;
+  margin: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+}
