@@ -1,0 +1,10 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<!-- 自定义组件 -->
+<view>
+  <view class="title">{{title}}</view>
+  <view class="content">{{content}}</view>
+  <my-cpn1></my-cpn1>
+
+</view>
+
+

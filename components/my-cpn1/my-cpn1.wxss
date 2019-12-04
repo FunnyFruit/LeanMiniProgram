@@ -1,0 +1,5 @@
+/* components/my-cpn1/my-cpn1.wxss */
+
+.cpn1{
+  background: red;
+}

@@ -1,3 +1,58 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world</text>
 <button size='mini'>按钮</button>
+
+<!-- 1、自定义组件基本使用 -->
+<my-cpn></my-cpn>
+
+<!-- 2.自定义组件的样式细节 -->
+<!--  -->
+<my-style/>
+
+<!-- 4 给自定义组件传递数据 -->
+<!-- 5.传递样式 -->
+
+<my-prop title="我擦破" content="mikelong" titleclass="red" />
+
+<!-- 组件向外传递时间-自定义事件 --> 
+<!-- 组件内部发出事件  -->
+<view class="box2">  
+  <view class="box2_in">当前计数：{{counter}}</view>
+  <my-event bind:increment="handleIncrement" />
+</view>
+
+<!-- 小练习 -->
+<view>
+<mcom title="{{['滑稽','滑稽','滑稽','滑稽']}}" titleclass="titleActive" 
+       bind:itemclick="handleTabClick"  />
+</view>
+<!-- 6.直接修改组件数据、调用方法 -->
+<button size="mini" bind:tap="handleIncrementCpn">修改组件内的数据 </button>
+<my-sel  id="my_sel" />
+
+<!-- 7.插槽的使用 -->
+
+<my-slot>
+  <button size="mini">卧槽</button>
+  <view>滑稽哟</view>
+  <image style="width:20px;height:20px;" src="https://img.php.cn/upload/course/000/000/014/5db2b53c67bca626.jpg"/>
+</my-slot>
+
+<my-slot>
+<slider value="10"></slider>
+</my-slot>
+
+<!-- 7.2 多个插槽的使用
+      注意点：
+      （1）、插槽很多，不知道替换哪一个
+      （2）、通过给插槽一个name属性
+      (3)、必须在component对象中添加一个选项：options-> multipleSlots:true
+ -->
+<my-mslot>
+<button slot="slot2">我是插入插槽的按钮</button>
+<slider slot="slot3"></slider>
+  <image slot="slot1" style="width:100px;height:100px;" src="https://img.php.cn/upload/course/000/000/014/5db2b53c67bca626.jpg"/>
+</my-mslot>
+
+
+

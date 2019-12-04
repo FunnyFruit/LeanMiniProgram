@@ -5,62 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
+    counter:0
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleIncrement(event){
+    console.log(event)
+    this.setData({
+      counter:this.data.counter + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleTabClick(event) {
+    console.log(event)
   },
+  handleIncrementCpn(){
+    console.log("1-092094-1029340-");
+    //修改my-sel内的counter的数据
+    // 1. 获取组件对象 const my_sel = this.selectComponent('id|class')
+    
+    const my_sel = this.selectComponent('#my_sel')
+    console.log(my_sel)
+    //修改组件内的数据:通过一个方法接口，来修改数据
+    /*
+    组件对象.setData({
+      组件属性：值
+    })
+    */
+    
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+    // 通过方法来修改数据：调用组件的接口
+    my_sel.incrementCounter(10);
 
   }
 })

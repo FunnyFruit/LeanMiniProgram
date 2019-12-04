@@ -1,0 +1,14 @@
+/* components/my-cpn/my-cpn.wxss */
+.title{
+  width: 100%;
+  height:60rpx;
+  border-bottom: 1px solid #ccc;
+  font-weight: 30rpx;
+}
+
+.content{
+  width: 100%;
+  height:200rpx;
+  margin-top:5px;
+  
+}

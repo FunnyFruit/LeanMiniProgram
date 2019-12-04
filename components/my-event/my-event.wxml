@@ -1,0 +1,2 @@
+<!--components/my-event/my-event.wxml-->
+<button class="btn" bind:tap="handleIncrement">加一</button>
